@@ -49,9 +49,5 @@ public class MultiThreading01 {
 
         long appWithThreadEnd = System.currentTimeMillis();
         System.out.println("Total execution time is with Thread " + (appWithThreadEnd-appWithThreadStarted)); //Total execution time is with Thread 592
-
-
-
-
     }
 }

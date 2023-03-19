@@ -7,12 +7,14 @@ public class MultiThreading02 {
 
         MyThread myThread = new MyThread(printer);
         YourThread yourThread = new YourThread(printer);
+
+        yourThread.run(); //Note: If you call run() method you just call the run method it will not start the thread
         myThread.start(); //when we used run() instead of start() it works regularly
         myThread.join(); //yourThread wait for myThread to finish print documents
-        //this is the first way to synchronize the thread
+        // this is the first way to synchronize the thread
         yourThread.start();
-        yourThread.run();///Note: If you call run() method you just call the run method it will not start the thread
         yourThread.join();
+
         System.out.println("Application is with Thread is finished");
     }
 }

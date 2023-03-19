@@ -8,7 +8,7 @@ public class CreateThreads {
         // if there is no thread used everything work in sequential order
 
         //job 1
-        System.out.println("--------Application without Thread is started....... ");
+        System.out.println("--------Application without Thread is started--------");
 
         //job2
         MyTask  myTask= new MyTask();
@@ -20,10 +20,10 @@ public class CreateThreads {
         }
 
         //job 4
-        System.out.println("--------Application without Thread is finished....... ");
+        System.out.println("--------Application without Thread is finished--------");
 
         // job1 1
-        System.out.println("--------Application with Thread is started....... ");
+        System.out.println("--------Application with Thread is started--------");
 
         //Now Job3 does not wait for job2 to be completed. They are being executed by the different threads
         //at the same time... so they are working concurrently.
@@ -37,12 +37,13 @@ public class CreateThreads {
         thread.start();
 
         //job 4
-        System.out.println("--------Application with Thread is finished....... ");
-        //3th option to create a thread
+        System.out.println("--------Application with Thread is finished--------");
+
+        //3rd option to create a thread
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                System.out.println("This is an anonymous thread ... ");
+                System.out.println("This is an anonymous thread");
             }
         });
         thread1.start();
@@ -57,7 +58,7 @@ public class CreateThreads {
 
 class MyTask{
     static void executeTask(){
-        for (int i = 0; i <=10; i++) {
+        for (int i = 1; i <=10; i++) {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
