@@ -1,14 +1,14 @@
-package thread;
+package thread.day01;
 
-public class MyTaskWithThread1 extends Thread{
-    public void run(){
+public class MyTask1 {
+    void executeTask(){
         for(int i=1; i<=10; i++){
             try {
-                Thread.sleep(50);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Printer 3 is working "+i);
+            System.out.println("Printer 1 is working " + i);
         }
     }
 }

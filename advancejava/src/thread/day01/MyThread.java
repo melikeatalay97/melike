@@ -1,10 +1,10 @@
-package thread;
+package thread.day01;
 
-public class YourThread extends Thread{
+public class MyThread extends Thread{
 
     Printer printer;
 
-    public YourThread(Printer printer){
+    public MyThread(Printer printer) {
         this.printer = printer;
     }
 
@@ -14,6 +14,6 @@ public class YourThread extends Thread{
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        printer.printDocuments(10,"Melike's Documents");
+        printer.printDocuments(10, "Alihan's Documents");
     }
 }

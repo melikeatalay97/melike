@@ -1,4 +1,4 @@
-package thread;
+package thread.day01;
 
 public class CreateThreads {
     public static void main(String[] args) {
