@@ -21,8 +21,14 @@ public class MultiThreading03 {
             }
         });
         thread2.start();
-        System.out.println("End of the code");
 
+        try {
+            thread2.join(); //i typed here to join() because of the following sout
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println("End of the code");
     }
 }
 
