@@ -1,7 +1,5 @@
 package thread.day02;
 
-import thread.day01.MyTaskWithThread1;
-
 public class Multithreading04 {
     public static void main(String[] args) {
 

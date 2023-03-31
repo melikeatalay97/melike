@@ -1,4 +1,4 @@
-package thread.day01;
+package thread.day01threadcreation_multithread;
 
 public class MyTaskWithThread1 extends Thread{
     public void run(){

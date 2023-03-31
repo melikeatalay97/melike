@@ -1,4 +1,4 @@
-package thread.day01;
+package thread.day01threadcreation_multithread;
 
 public class MultiThreading01 {
     public static void main(String[] args) {
