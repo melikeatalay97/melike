@@ -18,7 +18,7 @@ public class ThreadCreation03 {
             }
         });
         thread1.start();
-        
+
         Thread thread2 = new Thread(()->{
             Thread.currentThread().setName("Ronaldo");
             String name =Thread.currentThread().getName();
